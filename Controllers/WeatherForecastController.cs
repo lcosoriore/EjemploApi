@@ -34,6 +34,7 @@ namespace EjemploApi.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogInformation("Se retorna el listado solicitado");
             return _forecasts;
         }
 

@@ -10,6 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IHelloworldServices, HelloworldServices>();
+//Esta es una forma de inyectar dependencias usando directamente la clase pero no es lo mas recomendado viola los principios SOLID
+//builder.Services.AddScoped<IHelloworldServices>(p=> new HelloworldServices());
 
 var app = builder.Build();
 
