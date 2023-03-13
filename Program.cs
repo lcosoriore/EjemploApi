@@ -13,6 +13,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IHelloworldServices, HelloworldServices>();
 //Esta es una forma de inyectar dependencias usando directamente la clase pero no es lo mas recomendado viola los principios SOLID
 //builder.Services.AddScoped<IHelloworldServices>(p=> new HelloworldServices());
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<ITareaService, TareaService>();
 
 var app = builder.Build();
 
