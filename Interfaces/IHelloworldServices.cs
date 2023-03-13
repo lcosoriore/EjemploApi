@@ -1,4 +1,4 @@
-﻿namespace EjemploApi.Services
+﻿namespace EjemploApi.Interfaces
 {
     public interface IHelloworldServices
     {

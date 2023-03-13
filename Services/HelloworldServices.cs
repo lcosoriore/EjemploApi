@@ -1,4 +1,6 @@
-﻿namespace EjemploApi.Services
+﻿using EjemploApi.Interfaces;
+
+namespace EjemploApi.Services
 {
     public class HelloworldServices: IHelloworldServices
     {
